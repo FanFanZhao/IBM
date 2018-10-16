@@ -163,6 +163,7 @@ export default {
     .login-btn {
       line-height: 36px;
       text-align: center;
+      cursor: pointer;
     }
     .forget {
       display: flex;
