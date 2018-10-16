@@ -28,11 +28,14 @@ export default {
      created(){
         this.token = window.localStorage.getItem("token") || "";
         if(this.token == ''){
-      this.$router.push('/components/login');
-    }
+        this.$router.push('/components/login');
+        } else{
+
+            this.init();
+        }
      },
      mounted(){
-        this.init();
+        
      },
      methods:{
          init(){
